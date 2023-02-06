@@ -1,0 +1,22 @@
+#include <iostream> //Collborated with Casey Le and help from outside resources
+#include <string>
+using namespace std;
+
+#ifndef NODE_H
+#define NODE_H
+
+class Node {
+    public:
+        string data;
+        int count;
+        Node* left;
+        Node* right;
+        Node* parent;
+        Node(string key);
+        string getString() const;
+        void add();
+        void sub();
+
+};
+
+#endif
